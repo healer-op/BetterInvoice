@@ -43,12 +43,19 @@ td { border-color: #DDD; }
 /* page */
 
 html { font: 16px/1 'Open Sans', sans-serif; overflow: auto; padding: 0.5in; }
-html { background: #999; cursor: default; }
+html { cursor: default; }
+html { 
+	background: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/d7f6d7122489533.60db02d98ad0c.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 
 #bill1 { box-sizing: border-box; height: 11in; margin: 0 auto; overflow: hidden; padding: 0.5in; width: 100%; }
-#bill1 { background: #FFF; border-radius: 1px; box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5); }
+#bill1 { background: #FFF; border-radius: 1px; box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5); border-radius: 20px; }
 body { box-sizing: border-box; height: 12.5in; margin: 0 auto; overflow: hidden; padding: 0.5in; width: 8.5in; }
-body { background: #FFF; border-radius: 1px; box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5); }
+body { background: #FFF; border-radius: 1px; box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5); border-radius: 20px; }
 
 /* header */
 
