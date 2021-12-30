@@ -7,7 +7,7 @@ function Export1(){
 
     var jsonObj = 
         {
-            "Website": `HTML-INVOICER`,
+            "Website": `BetterInvoice`,
             "Author": `HEALER-OP`,
         	"cname": `${cname}`,
         	"caddress": `${caddress}`,  
