@@ -10,18 +10,18 @@
   <meta name="theme-color" content="#de8a02">
   <link rel="icon" href="./3753033.png" type="image/gif">
 
-
 </head>
 <body >
 		<div id="bill1">
+			<div id="result-after"></div>
 			<header>
-				<h1 contenteditable>HEALER CANDIES</h1>
-				<address contenteditable>
+				<h1 contenteditable id="cname">HEALER CANDIES</h1>
+				<address contenteditable id="caddress">
 					<p>Healer Candies</p>
 					<p>1007 Mountain Drive<br>Gotham City</p>
 					<p>(800) 555-1234</p>
 				</address>
-				<span><img alt="" src="./3753033.png" style='width:50px;height:50px;'><input type="file" accept="image/*"></span>
+				<span><img id="cimg" alt="" src="./3753033.png" style='width:50px;height:50px;'><input type="file" accept="image/*"></span>
 			</header>
 			<article>
 				<h1>Recipient</h1>
@@ -79,23 +79,38 @@
 				</table>
 			</article>
 			<aside>
-				<h1><span contenteditable>Additional Notes</span></h1>
-				<div contenteditable>
+				<h1><span contenteditable id="caddi">Additional Notes</span></h1>
+				<div contenteditable id="caddin">
 					<p>A finance charge of 1.5% will be made on unpaid balances after 30 days.</p>
 				</div>
 			</aside>
 	    </div>
 		<center>
-			<button id="button" style="z-index: 10; margin-top: 5%;">Generate</button>
+			<style>
+				#file{
+                    display: none;
+                }
+			</style>
+			<div style="z-index: 10; margin-top: 5%; display: flex; text-align: center; justify-content: center;">
+			<input id="file" type="file" />
+			<button id="buttonFile">Upload file</button>
+			<button id="button" style="margin: 0px 2%;" >Generate</button>
+			<button onclick="Export1()" style="margin: 0px 2%;">Export</button>
+		    </div>
 		</center>
+		
 <!-- partial -->
 <script  src="./script.js"></script>
+
 
 <!-- jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- image to dom cdn  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/g/filesaver.js"></script>
+
+
+<!-- image Render -->
 <script>
     $(document).ready(function(){
 		var options = {
@@ -110,5 +125,8 @@
     })
 })
 </script>
+
+<!-- Export Template And Import-->
+<script src="./json.js"></script>
 </body>
 </html>
