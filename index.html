@@ -90,6 +90,11 @@
 				#file{
                     display: none;
                 }
+				audio{
+					position: fixed;
+                    bottom: 20px;
+                    left: 20px;
+				}
 			</style>
 			<div style="z-index: 10; margin-top: 5%; display: flex; text-align: center; justify-content: center;">
 			<input id="file" type="file" />
@@ -129,8 +134,10 @@
 <!-- Export Template And Import-->
 <script src="./json.js"></script>
 </body>
-<audio controls autoplay loop style="z-index: 10; position: absolute; margin-top: 60px;">
+<audio controls autoplay loop style="z-index: 10;">
 	<source src="Spice.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+
+
 </html>
